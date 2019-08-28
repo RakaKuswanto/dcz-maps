@@ -2,8 +2,9 @@
 import os
 from src.app import create_app
 
+app = os.environ['FLASK_ENV']
+
 def mulai(environ, start_response):
-    app = os.environ['FLASK_ENV']
     # run app
     app.run()
     """Simplest possible application object"""
