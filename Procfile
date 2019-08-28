@@ -1,1 +1,1 @@
-web: gunicorn run:mulai
+web: gunicorn run:app
