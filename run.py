@@ -2,7 +2,7 @@
 import os
 from src.app import create_app
 
-def app(environ, start_response):
+def mulai(environ, start_response):
     app = os.environ['FLASK_ENV']
     # run app
     app.run()
