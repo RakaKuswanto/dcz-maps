@@ -16,5 +16,5 @@ def mulai(environ, start_response):
 
 if __name__ == '__main__':
     env_name  =   os.environ['FLASK_ENV']
-    app = create_app(env_name)
-    app.run()
+    app_flask = create_app(env_name)
+    app_flask.run()
