@@ -5,7 +5,7 @@ from src.app import create_app
 def mulai(environ, start_response):
     env_name  =   os.environ['FLASK_ENV']
     app = create_app(env_name)
-    app.run(host='0.0.0.0')
+    app.run()
     
     # run app
     """Simplest possible application object"""
