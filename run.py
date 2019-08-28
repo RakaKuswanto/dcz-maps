@@ -18,7 +18,7 @@ def mulai(environ, start_response):
     start_response(status, response_headers)
     return iter([data])
 
-if __name__ == '__main__':
-  app = os.environ['FLASK_ENV']
-  # run app
-  app.run()
+# if __name__ == '__main__':
+#   app = os.environ['FLASK_ENV']
+#   # run app
+#   app.run()
