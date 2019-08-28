@@ -2,6 +2,9 @@
 import os
 from src.app import create_app
 
+env_name  =   os.environ['FLASK_ENV']
+app_flask = create_app(env_name)
+
 def mulai(environ, start_response):
     # run app
     """Simplest possible application object"""
@@ -15,6 +18,4 @@ def mulai(environ, start_response):
     return iter([data])
 
 if __name__ == '__main__':
-    env_name  =   os.environ['FLASK_ENV']
-    app_flask = create_app(env_name)
     app_flask.run()
