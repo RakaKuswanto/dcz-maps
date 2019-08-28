@@ -36,4 +36,6 @@ class UserModel():
       # print (place.name) 
       # print("Latitude", place.geo_location['lat']) 
       # print("Longitude", place.geo_location['lng']) 
+      
+    print (hasil)
     return hasil
