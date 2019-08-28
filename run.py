@@ -3,6 +3,6 @@ import os
 from src.app import create_app
 
 if __name__ == '__main__':
-  app = create_app('development')
+  app = os.environ['FLASK_ENV']
   # run app
   app.run()
